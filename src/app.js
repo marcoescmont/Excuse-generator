@@ -27,8 +27,10 @@ window.onload = function() {
     const c = Math.floor(Math.random() * (maxC - minAll + 1) + minAll);
     const d = Math.floor(Math.random() * (maxD - minAll + 1) + minAll);
 
-    document.getElementById("excuse").innerHTML =
-      who[a] + " " + action[b] + " " + what[c] + " " + when[d];
+    document.getElementById(
+      "excuse"
+    ).innerHTML = `${who[a]} ${action[b]} ${what[c]} ${when[d]}`;
+    //   who[a] + " " + action[b] + " " + what[c] + " " + when[d];
   }
   return excuseGenerator();
 };
